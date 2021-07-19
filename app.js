@@ -31,12 +31,13 @@ function setupMap(center){
     map.addControl(new mapboxgl.NavigationControl());
 
     // adds the geolocater search function position at the top left of the map
-    // map.addControl(
-    //     new MapboxGeocoder({
-    //     accessToken: mapboxgl.accessToken,
-    //     mapboxgl: mapboxgl
-    //     }),'top-left');  
+    map.addControl(
+        new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+        }),'top-left');  
 
+    // adds the directions function at top left of the map
     map.addControl(
         new MapboxDirections({
         accessToken: mapboxgl.accessToken
