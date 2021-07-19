@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title h3 {
+    font-size: 20px;
+}
+
+.mapboxgl-ctrl-geocoder {
+    width: 100%!important;
+    margin-bottom: .11em!important;
+    max-width: 360px!important;
+}
